@@ -23,6 +23,7 @@ RAM: 4 GB
 Disk: 100 GB SSD
 
 # 🛠️ 1. Hazırlık ve Kurulum (Installation)Sunucunuzu güncelleyip gerekli temel araçları kurun:
+
 ```Bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install curl git jq lz4 build-essential -y
@@ -39,7 +40,8 @@ sudo mv worrelld /usr/local/bin/
 worrelld version --long | head -5
 ```
 
-# ⚙️ 2. Başlatma ve Yapılandırma (Init & Config)Kendi belirlediğiniz bir MONIKER (Node adı) ve WALLET (Cüzdan adı) girerek değişkenleri ayarlayın:
+# ⚙️ 2. Başlatma ve Yapılandırma (Init & Config)
+Kendi belirlediğiniz bir MONIKER (Node adı) ve WALLET (Cüzdan adı) girerek değişkenleri ayarlayın:
 ```Bash
 export MONIKER="KENDI_NODE_ADINIZ"
 export WALLET="KENDI_CUZDAN_ADINIZ"
@@ -66,7 +68,8 @@ sed -i -e "s|^persistent_peers *=.*|persistent_peers = \"$PEERS\"|" $HOME/.worre
 sed -i -e "s|^minimum-gas-prices *=.*|minimum-gas-prices = \"0.025uworrell\"|" $HOME/.worrell/config/app.toml
 ```
 
-#  3. Hızlı Senkronizasyon (State Sync)Baştan senkronize olmak saatler sürebilir. Ağa hızlıca katılmak için ITRocket RPC'sini kullanarak State Sync yapıyoruz:
+#  3. Hızlı Senkronizasyon (State Sync)
+Baştan senkronize olmak saatler sürebilir. Ağa hızlıca katılmak için ITRocket RPC'sini kullanarak State Sync yapıyoruz:
 
 ```Bash
 # Node verilerini sıfırla (priv_validator_key saklanarak)
@@ -83,7 +86,8 @@ sed -i -E "s|^[[:space:]]*trust_height[[:space:]]*=.*|trust_height = $TRUST_HEIG
 sed -i -E "s|^[[:space:]]*trust_hash[[:space:]]*=.*|trust_hash = \"$TRUST_HASH\"|" $HOME/.worrell/config/config.toml
 ```
 
-# 🛡️ 4. Servis Oluşturma ve Başlatma (Systemd)Arka planda kesintisiz çalışması için Systemd servisi oluşturuyoruz:
+# 🛡️ 4. Servis Oluşturma ve Başlatma (Systemd)
+Arka planda kesintisiz çalışması için Systemd servisi oluşturuyoruz:
 
 ```Bash
 sudo tee /etc/systemd/system/worrelld.service > /dev/null <<EOF
