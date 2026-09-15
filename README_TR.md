@@ -1,7 +1,18 @@
 # Worrell-Testnet-Node-Validator-Kurulum-Rehberi
 Bu repo, Worrell Testnet ağı üzerinde tam düğüm (full node) kurma, hızlı senkronizasyon (State Sync) yapma ve validatör oluşturma adımlarını adım adım içermektedir.
 
-# 📊 Ağ Bilgileri (Network Details)ParametreDeğerChain IDworrell-testnet-1Binary Adıworrelld (Cosmos SDK v0.53.6)Base Denomuworrell (1 WORRELL = 1,000,000 uworrell)Min Gas Price0.025uworrellTopluluk ExplorerlarıANODE.TEAM • ITRocket • OshVanKFaucet[http://164.68.98.186:4500](http://164.68.98.186:4500) (Saatlik 500 WORRELL)💻 Sistem GereksinimleriKaynakTestnet (Önerilen)İşletim SistemiUbuntu 22.04 LTSCPU2 vCPURAM4 GBDisk100 GB SSD
+# 📊 Ağ Bilgileri (Network Details)ParametreDeğer
+Chain ID worrell-testnet-1
+Binary Adıworrelld (Cosmos SDK v0.53.6)
+Base Denom uworrell (1 WORRELL = 1,000,000 uworrell)
+Min Gas Price 0.025uworrell
+
+# 💻 Sistem Gereksinimleri
+Kaynak Testnet(Önerilen)
+İşletim Sistemi Ubuntu 22.04 LTS
+CPU 2 vCPU
+RAM 4 GB
+Disk 100 GB SSD
 
 # 🛠️ 1. Hazırlık ve Kurulum (Installation)Sunucunuzu güncelleyip gerekli temel araçları kurun:
 ```Bash
