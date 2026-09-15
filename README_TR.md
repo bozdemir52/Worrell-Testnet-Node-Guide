@@ -22,7 +22,8 @@ RAM: 4 GB
 
 Disk: 100 GB SSD
 
-# 🛠️ 1. Hazırlık ve Kurulum (Installation)Sunucunuzu güncelleyip gerekli temel araçları kurun:
+# 🛠️ 1. Hazırlık ve Kurulum (Installation)
+Sunucunuzu güncelleyip gerekli temel araçları kurun:
 
 ```Bash
 sudo apt update && sudo apt upgrade -y
