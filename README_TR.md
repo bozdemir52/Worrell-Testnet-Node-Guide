@@ -2,17 +2,17 @@
 Bu repo, Worrell Testnet ağı üzerinde tam düğüm (full node) kurma, hızlı senkronizasyon (State Sync) yapma ve validatör oluşturma adımlarını adım adım içermektedir.
 
 # 📊 Ağ Bilgileri (Network Details)ParametreDeğer
-Chain ID worrell-testnet-1
-Binary Adıworrelld (Cosmos SDK v0.53.6)
-Base Denom uworrell (1 WORRELL = 1,000,000 uworrell)
-Min Gas Price 0.025uworrell
+ Chain ID worrell-testnet-1
+ Binary Adıworrelld (Cosmos SDK v0.53.6)
+ Base Denom uworrell (1 WORRELL = 1,000,000 uworrell)
+ Min Gas Price 0.025uworrell
 
 # 💻 Sistem Gereksinimleri
-Kaynak Testnet(Önerilen)
-İşletim Sistemi Ubuntu 22.04 LTS
-CPU 2 vCPU
-RAM 4 GB
-Disk 100 GB SSD
+ Kaynak Testnet(Önerilen)
+ İşletim Sistemi Ubuntu 22.04 LTS
+ CPU 2 vCPU
+ RAM 4 GB
+ Disk 100 GB SSD
 
 # 🛠️ 1. Hazırlık ve Kurulum (Installation)Sunucunuzu güncelleyip gerekli temel araçları kurun:
 ```Bash
@@ -100,12 +100,24 @@ sudo systemctl enable --now worrelld
 ```
 
 # 💰 5. Cüzdan ve Validatör İşlemleri
- Cüzdan Oluşturma ve Faucet
+ Cüzdan İşlemleri (Oluşturma veya İçe Aktarma)
+ Seçenek A: Yeni Cüzdan Oluşturma
 
 ```Bash
 # Yeni cüzdan oluştur (ÇIKAN GİZLİ KELİMELERİ MUTLAKA KAYDEDİN!)
 worrelld keys add $WALLET
+```
 
+ Seçenek B: Var Olan Cüzdanı İçe Aktarma (Cüzdan Taşıma)
+
+```Bash
+# Bu komutu girdikten sonra sizden 24 gizli kelimenizi girmeniz istenecektir.
+worrelld keys add $WALLET --recover
+```
+
+Faucet (Test Token İsteme) & Bakiye Kontrolü:
+
+```Bash
 # Test token iste (Saatte bir 500 WORRELL alınabilir)
 curl -X POST http://164.68.98.186:4500 \
   -H "Content-Type: application/json" \
