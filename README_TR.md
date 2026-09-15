@@ -109,6 +109,7 @@ sudo systemctl enable --now worrelld
 
 # 💰 5. Cüzdan ve Validatör İşlemleri
  Cüzdan İşlemleri (Oluşturma veya İçe Aktarma)
+ 
  Seçenek A: Yeni Cüzdan Oluşturma
 
 ```Bash
