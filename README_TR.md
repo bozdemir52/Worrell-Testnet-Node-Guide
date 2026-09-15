@@ -3,16 +3,23 @@ Bu repo, Worrell Testnet ağı üzerinde tam düğüm (full node) kurma, hızlı
 
 # 📊 Ağ Bilgileri (Network Details)
 Chain ID: worrell-testnet-1
+
 Binary Adı: worrelld (Cosmos SDK v0.53.6)
+
 Base Denom: uworrell (1 WORRELL = 1,000,000 uworrell)
+
 Min Gas Price: 0.025uworrell
 
 # 💻 Sistem Gereksinimleri
 
 Kaynak: Testnet(Önerilen)
+
 İşletim Sistemi: Ubuntu 22.04 LTS +
+
 CPU: 2 vCPU
+
 RAM: 4 GB
+
 Disk: 100 GB SSD
 
 # 🛠️ 1. Hazırlık ve Kurulum (Installation)Sunucunuzu güncelleyip gerekli temel araçları kurun:
